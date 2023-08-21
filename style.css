@@ -1,0 +1,55 @@
+::root{
+    --color-red: hsl(0, 100%, 67%);
+    --color-yellow: hsl(39, 100%, 56%);
+    --color-teal: hsl(166, 100%, 37%);
+    --color-cobalt: hsl(234, 85%, 45%);
+    --color-slate-bg: hsl(252, 100%, 67%);
+    --color-blue-bg: hsl(241, 81%, 54%);
+
+    --color-violet: hsla(256, 72%, 46%, 1);
+    --color-persian: hsla(241, 72%, 46%, 0);
+    --color-White: hsl(0, 0%, 100%);
+    --color-pale: hsl(221, 100%, 96%);
+    --color-lavender: hsl(241, 100%, 89%);
+    --color-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid; 
+    place-items: center;
+    line-height: 1.5;
+    font-family: "Hanken Grotesk";
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid;
+    max-width: 25rem;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+#left-subcontainer{
+    display: grid;
+}    
+
+
+#right-subcontainer{
+    display: grid;
+}
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
