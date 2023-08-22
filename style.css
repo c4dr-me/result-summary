@@ -202,3 +202,12 @@ button:active{
   .footer a {
     color: rgb(75, 75, 182);
   }
+
+    @media (max-width:375px){
+    .summary-score, .summary-total{
+        display: grid;
+        row-gap: 0.7rem;
+        justify-content: center;
+        align-items: center;
+    }
+  }
