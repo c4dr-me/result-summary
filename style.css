@@ -131,7 +131,7 @@ h2{
         border-radius: 0.8em;
         text-align:left;
     }
-    
+/* text and background colors used */
     
 .reaction{
     background-color: var(--color-red-bg);
@@ -172,6 +172,8 @@ h2{
     opacity:0.39;
 }
 
+/*Continue button  */
+
 button{
     background-color: var(--color-gray-blue);
     color: var(--color-White);
@@ -188,10 +190,13 @@ button:hover{
     background-image: linear-gradient(to right,var(--color-slate-bg), var(--color-cobalt));
 
 }
+/* Works when you click on the button i.e active state */
 
 button:active{
     opacity: 0.7;
 }
+
+/*footer */
 
 .footer {
     font-size: 0.8rem;
@@ -203,11 +208,4 @@ button:active{
     color: rgb(75, 75, 182);
   }
 
-    @media (max-width:375px){
-    .summary-score, .summary-total{
-        display: grid;
-        row-gap: 0.7rem;
-        justify-content: center;
-        align-items: center;
-    }
-  }
+    
