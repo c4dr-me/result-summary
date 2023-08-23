@@ -170,6 +170,7 @@ h2{
 .summary-score{
     font-weight: 600;
     font-size: 0.98rem;
+    opacity: 0.8;
 }
 
 .summary-total{
