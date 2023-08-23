@@ -190,14 +190,7 @@ button{
 button:hover{
     background-image: linear-gradient(to right,var(--color-slate-bg), var(--color-cobalt));
 }
-button:focus{
-    box-shadow: 0 0 0 3px rgba(75, 75, 182, 0.5);
-    overflow: hidden;
-}
 
-button:active{
-    opacity: 0.7;
-}
 
 .footer {
     font-size: 0.8rem;
