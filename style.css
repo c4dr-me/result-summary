@@ -32,6 +32,7 @@ img,h2,h1,h3,p{
     display:block;
 }
 
+
 body{
     min-height: 100vh;
     display: grid; 
@@ -40,11 +41,14 @@ body{
     font-family: "Hanken Grotesk";
 }
 
-#container{
+.container{
     display: grid;
     grid-template-columns:1fr 1fr;
-    min-height: 56vh;
-    max-width:34em;
+    max-height: 55rem;
+    max-width: 35em;
+    background: var(--color-white);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2rem rgba(27, 26, 26, 0.2);
 }
 
 #left-subcontainer{
@@ -52,7 +56,7 @@ body{
     grid-template-rows: auto auto auto auto;
     background: linear-gradient(to bottom, var(--color-slate-bg), var(--color-cobalt));
     justify-items: center;
-    border-radius: 1.2rem;
+    border-radius: 0.8rem 1.2rem 1.2rem 0.8rem;
     text-align: center;
 }    
 
@@ -106,11 +110,9 @@ h2{
 
 #right-subcontainer{
     display: grid;
-    background-color: var(--color-White);
-    padding: 0.3rem 1.6rem;
-    border-radius: 1.2rem;
+    padding: 1.3rem 1.2rem;
     align-items: center;
-    box-shadow: 1px 1px 2rem rgba(27, 26, 26, 0.2);
+    border: none;
 }
 
 .summary-heading{
@@ -124,14 +126,14 @@ h2{
     .memory,
     .verbal{
         display: grid;
-        grid-template-columns: 0.25fr 0.5fr auto ;
-        justify-items: center;
+        grid-template-columns: auto 0.89fr auto ;
         align-items: center;
         padding: 1.1em;
         border-radius: 0.8em;
-        text-align:left;
+        max-width:100%;
     }
-/* text and background colors used */
+
+
     
 .reaction{
     background-color: var(--color-red-bg);
@@ -159,7 +161,8 @@ h2{
     background-color: var(--color-cobalt-bg);
 }
 .summary-visual{
-    color: var(--color-cobalt)
+    color: var(--color-cobalt);
+   
 }
 
 .summary-score{
@@ -172,7 +175,6 @@ h2{
     opacity:0.39;
 }
 
-/*Continue button  */
 
 button{
     background-color: var(--color-gray-blue);
@@ -182,21 +184,20 @@ button{
     padding: 0.8rem 0.7em;
     font-size: 0.9em;
     text-decoration: none;
-    border: none;
     cursor: pointer;
 }
 
 button:hover{
     background-image: linear-gradient(to right,var(--color-slate-bg), var(--color-cobalt));
-
 }
-/* Works when you click on the button i.e active state */
+button:focus{
+    box-shadow: 0 0 0 3px rgba(75, 75, 182, 0.5);
+    overflow: hidden;
+}
 
 button:active{
     opacity: 0.7;
 }
-
-/*footer */
 
 .footer {
     font-size: 0.8rem;
@@ -206,6 +207,12 @@ button:active{
   }
   .footer a {
     color: rgb(75, 75, 182);
+  }
+
+  @media (max-width: 365px) {
+    .container {
+        display: block;
+    }
   }
 
     
