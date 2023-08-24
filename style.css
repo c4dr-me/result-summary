@@ -212,7 +212,6 @@ button:hover{
 
   @media (max-width: 391px) {
     body{
-        background-color:black;
         max-height: 100vh;
     }
     .container{
