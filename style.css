@@ -1,3 +1,4 @@
+/*FONT/BACKGROUND COLORS*/
 :root{
     --color-red: hsl(0, 100%, 67%);
     --color-red-bg:hsla(0, 100%, 67%, 0.04);
@@ -40,6 +41,7 @@ body{
     line-height: 1.5;
     font-family: "Hanken Grotesk";
 }
+/*MAIN CONTAINER WITH TWO SECTIONS*/
 
 .container{
     display: grid;
@@ -51,6 +53,7 @@ body{
     box-shadow: 0 0.1rem 0.2rem 0 rgba(27, 26, 26, 0.2);
 }
 
+/*LEFT SECTION */
 #left-subcontainer{
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -107,8 +110,7 @@ h2{
     padding: 2.2rem;
 }
 
-
-
+/*RIGHT SECTION*/
 #right-subcontainer{
     display: grid;
     padding: 1.3rem 1.2rem;
@@ -188,6 +190,7 @@ button{
     font-size: 0.9em;
     text-decoration: none;
     cursor: pointer;
+    border:none;
 }
 
 button:hover{
@@ -205,12 +208,17 @@ button:hover{
     color: rgb(75, 75, 182);
   }
 
-  @media (max-width: 365px) {
-    .container {
+/*MEDIA QUERY FOR MOBILE*/
+
+  @media (max-width: 391px) {
+    body{
+        background-color:black;
+        max-height: 100vh;
+    }
+    .container{
         display: block;
     }
   }
-  
 
 
 
